@@ -1,113 +1,202 @@
-<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<title>Calculadora</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Currículo</title>
 
 <style>
+
 body{
-    font-family: Arial;
-    background:#1e1e1e;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    height:100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#f2f2f2;
+    margin:0;
+    padding:40px;
 }
 
-.calculadora{
-    background:#2b2b2b;
-    padding:20px;
-    border-radius:10px;
-    width:260px;
+.container{
+    max-width:800px;
+    margin:auto;
+    background:white;
+    padding:40px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
 }
 
-#display{
-    width:100%;
-    height:40px;
-    margin-bottom:10px;
-    font-size:20px;
-    text-align:right;
-    padding:5px;
+h1{
+    text-align:center;
+    margin-bottom:5px;
 }
 
-.botoes{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:5px;
+.info{
+    text-align:center;
+    font-size:14px;
+    color:#555;
 }
 
-button{
-    height:40px;
+.section{
+    margin-top:25px;
+}
+
+.section h2{
     font-size:18px;
-    border:none;
-    border-radius:5px;
-    cursor:pointer;
+    border-bottom:2px solid #ddd;
+    padding-bottom:5px;
 }
 
-button:hover{
-    background:#555;
+ul{
+    margin-top:5px;
 }
+
+.skills{
+    line-height:1.6;
+}
+
+a{
+    color:#0066cc;
+    text-decoration:none;
+}
+
 </style>
 </head>
 
 <body>
 
-<div class="calculadora">
+<div class="container">
 
-<input type="text" id="display" disabled>
+<h1>LUAN BARRETO</h1>
 
-<div class="botoes">
-<button onclick="limpar()">C</button>
-<button onclick="apagar()">←</button>
-<button onclick="adicionar('/')">/</button>
-<button onclick="adicionar('*')">*</button>
-
-<button onclick="adicionar('7')">7</button>
-<button onclick="adicionar('8')">8</button>
-<button onclick="adicionar('9')">9</button>
-<button onclick="adicionar('-')">-</button>
-
-<button onclick="adicionar('4')">4</button>
-<button onclick="adicionar('5')">5</button>
-<button onclick="adicionar('6')">6</button>
-<button onclick="adicionar('+')">+</button>
-
-<button onclick="adicionar('1')">1</button>
-<button onclick="adicionar('2')">2</button>
-<button onclick="adicionar('3')">3</button>
-<button onclick="calcular()">=</button>
-
-<button onclick="adicionar('0')">0</button>
-<button onclick="adicionar('.')">.</button>
+<div class="info">
+Salvador | +55 71 98804-1311 | luanbarreto5278@gmail.com <br>
+LinkedIn: <a href="https://www.linkedin.com/in/luan-barreto-3637763b6/">Perfil</a> |
+GitHub: <a href="https://github.com/luanbarreto-back">Repositórios</a>
 </div>
+
+<div class="section">
+<h2>Objetivo</h2>
+
+<p>
+Estágio ou Jovem Aprendiz em Tecnologia da Informação
+</p>
+
+<p>
+Estou em busca de oportunidades como Jovem Aprendiz ou estágio na área de Tecnologia da Informação (TI), onde posso aplicar e expandir meus conhecimentos em programação e análise de sistemas.
+</p>
 
 </div>
 
-<script>
 
-let display = document.getElementById("display");
+<div class="section">
+<h2>Formação</h2>
 
-function adicionar(valor){
-    display.value += valor;
-}
+<p>
+Colégio da Polícia Militar Dona Leonor Calmon<br>
+UNIJORGE / Sistemas de Informação
+</p>
 
-function limpar(){
-    display.value = "";
-}
+</div>
 
-function apagar(){
-    display.value = display.value.slice(0,-1);
-}
 
-function calcular(){
-    try{
-        display.value = eval(display.value);
-    }catch{
-        display.value = "Erro";
-    }
-}
+<div class="section">
 
-</script>
+<h2>Experiência Profissional</h2>
+
+<p>
+Auxiliar Administrativo - DL Climatização | Freelancer
+</p>
+
+</div>
+
+
+<div class="section">
+
+<h2>Cursos Realizados</h2>
+
+<ul>
+<li>Excel Básico-Avançado - Santander Open Academy</li>
+<li>Word Básico-Avançado - Santander Open Academy</li>
+<li>Introdução à Administração - Bradesco</li>
+<li>Python - Santander Open Academy</li>
+<li>Bootcamp - Santander Open Academy</li>
+</ul>
+
+</div>
+
+
+<div class="section">
+
+<h2>Projetos de Destaque</h2>
+
+<ul>
+<li>Aplicação de calculadora desenvolvida em HTML demonstrando lógica de interface e estruturação de páginas web.</li>
+<li>Portfólio pessoal desenvolvido com HTML para apresentação de projetos e informações profissionais.</li>
+</ul>
+
+</div>
+
+
+<div class="section">
+
+<h2>Idiomas</h2>
+
+<p>
+Inglês (Básico) | Português (Nativo)
+</p>
+
+</div>
+
+
+<div class="section">
+
+<h2>Tech Skills</h2>
+
+<p class="skills">
+JavaScript | Java | Python | HTML | CSS | Programação Orientada a Objetos |
+Front End | IA | SQL | GitHub | Design Thinking |
+Excel | PowerPoint | Word
+</p>
+
+</div>
+
+
+<div class="section">
+
+<h2>Outras Habilidades</h2>
+
+<ul>
+<li>Lógica de programação</li>
+<li>Estruturação de banco de dados básico</li>
+</ul>
+
+</div>
+
+
+<div class="section">
+
+<h2>Habilidades Interpessoais (Soft Skills)</h2>
+
+<ul>
+<li><b>Responsabilidade:</b> Cumprimento de obrigações e prazos.</li>
+<li><b>Inteligência:</b> Capacidade de compreender conceitos e resolver problemas.</li>
+<li><b>Proatividade:</b> Iniciativa para identificar e solucionar questões.</li>
+<li><b>Disciplina:</b> Foco em rotinas e organização.</li>
+<li><b>Empenho:</b> Dedicação para alcançar metas.</li>
+<li><b>Respeito:</b> Consideração pelas perspectivas dos outros.</li>
+<li><b>Criatividade:</b> Pensamento inovador para encontrar soluções.</li>
+</ul>
+
+</div>
+
+
+<div class="section">
+
+<h2>Informações Adicionais</h2>
+
+<ul>
+<li>Carteira Nacional de Habilitação (CNH) categoria AB</li>
+</ul>
+
+</div>
+
+</div>
 
 </body>
 </html>
